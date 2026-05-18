@@ -6,6 +6,9 @@
 Данный проект реализует пайплайн дообучения нейросети ResNet18 для классификации изображений на датасете из ~10 000 изображений кошек. 
 В процессе разработки были решены задачи обработки данных, нормализации и аугментации.
 
+#### Примеры кошек
+
+![cats](https://github.com/Damego/neurons-cats/blob/main/cats_example.png?raw=true)
 
 ### 🏆 Результаты
 - **Точность на валидации:** ~89-90%.
@@ -15,6 +18,9 @@
 
 С использованем batch size = 64, lr = 3e-5
 
+#### График
+
+![график](https://github.com/Damego/neurons-cats/blob/main/%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA.png?raw=true)
 
 ## 📊 Методы и решения
 
@@ -30,13 +36,16 @@
 - Увеличение batch size и lr приводили к сильному ухудшению точности на валидации, ~0.03-0.04 на первых эпохах.
 - Смена базовой модели ResNet18 на EfficientNet B0 и B3, но длительность обучения одной эпохи была ~12 и ~24 минут соответственно, при этом результат не отличался от ResNet18. Пробовалось, чтобы повысить точность больше, чем 0.9 при ResNet18.
 
+#### Успех и ошибки
+
+![errors](https://github.com/Damego/neurons-cats/blob/main/wrong.png?raw=true)
+
 ## Сравнение с другими
 
 ### Baseline
 - ResNet18 с использованием models.ResNet18_Weights.IMAGENET1K_V1 достигла 0.8 точности
 ### SOTA
 - В [этом kaggle бенчмарке](https://www.kaggle.com/models/wafaaelhusseini/cats-vs-dogs-classifier) была достигнута точность 98.9% на ~25 тыс. изображений кошек и собак (с соотношением 1:1) с использованием базовой модели MobileNetV2.
-
 
 ### Ссылки
 [Датасет pop-cats](https://www.kaggle.com/datasets/knucharat/pop-cats)
