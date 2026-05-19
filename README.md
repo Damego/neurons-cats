@@ -55,7 +55,7 @@
 ### Baseline
 - ResNet18 с использованием models.ResNet18_Weights.IMAGENET1K_V1 достигла 0.8 точности
 ### SOTA
-- В [этом kaggle бенчмарке](https://www.kaggle.com/models/wafaaelhusseini/cats-vs-dogs-classifier) была достигнута точность 98.9% на ~25 тыс. изображений кошек и собак (с соотношением 1:1) с использованием базовой модели MobileNetV2.
+- В [этом бенчмарке](https://github.com/Leohoji/End-to-end-Multil-Class-Cat-Breed-Classification-Reaches-93-Percent-Accuracy) была достигнута точность 93% на том же датасете с использованием базовой модели EfficientNetV2B0.
 
 ### Ссылки
 [Датасет pop-cats](https://www.kaggle.com/datasets/knucharat/pop-cats)
